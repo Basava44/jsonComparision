@@ -1,0 +1,18 @@
+<div>
+  <h2 class="mainTitle">Compare JSON Data</h2>
+  <section class="mainArea">
+    <textarea
+      [(ngModel)]="firstjsonData"
+      placeholder="Enter JSON data"
+      class="jsonInputblock"
+      #firstJsonData
+    ></textarea>
+    <textarea
+      [(ngModel)]="secondjsonData"
+      placeholder="Enter JSON data"
+      class="jsonInputblock"
+      #secondJsonData
+    ></textarea>
+  </section>
+  <button (click)="compareJson()" class="compareButton">Compare</button>
+</div>
